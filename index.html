@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sil Costa By Pretta — Master Coiffeur L'Oréal | São Paulo</title>
+<meta name="description" content="Sil Costa By Pretta — Master Coiffeur L'Oréal. Especialista em mechas, coloração e carreira. Atendimento premium em São Paulo. Agende pelo WhatsApp." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Linha dourada + tesoura (segue scroll até Serviços) -->
+<div class="scissor-line" id="scissorLine" aria-hidden="true"></div>
+<div class="floating-scissors" id="floatingScissors" aria-hidden="true">
+  <svg viewBox="0 0 120 220" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="goldBlade" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#fff7d6"/>
+        <stop offset="40%" stop-color="#e9c66a"/>
+        <stop offset="70%" stop-color="#b8893a"/>
+        <stop offset="100%" stop-color="#7a5a1f"/>
+      </linearGradient>
+      <linearGradient id="goldHandle" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#f6dd92"/>
+        <stop offset="100%" stop-color="#9a7124"/>
+      </linearGradient>
+      <radialGradient id="screw" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#fff2b8"/>
+        <stop offset="100%" stop-color="#6d4f15"/>
+      </radialGradient>
+      <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="2.5"/>
+        <feOffset dx="2" dy="3" result="off"/>
+        <feComponentTransfer><feFuncA type="linear" slope="0.55"/></feComponentTransfer>
+        <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    </defs>
+    <g filter="url(#shadow)">
+      <!-- Lâmina esquerda -->
+      <path d="M60 110 L20 6 Q14 -2 22 4 L72 100 Z" fill="url(#goldBlade)" stroke="#5a3f10" stroke-width="0.6"/>
+      <!-- Lâmina direita -->
+      <path d="M60 110 L100 6 Q106 -2 98 4 L48 100 Z" fill="url(#goldBlade)" stroke="#5a3f10" stroke-width="0.6" opacity="0.95"/>
+      <!-- Cabos (anéis) -->
+      <ellipse cx="38" cy="170" rx="26" ry="32" fill="none" stroke="url(#goldHandle)" stroke-width="9"/>
+      <ellipse cx="82" cy="170" rx="26" ry="32" fill="none" stroke="url(#goldHandle)" stroke-width="9"/>
+      <!-- Conexão cabos-lâminas -->
+      <path d="M48 130 Q40 145 42 158" stroke="url(#goldHandle)" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <path d="M72 130 Q80 145 78 158" stroke="url(#goldHandle)" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <!-- Parafuso central -->
+      <circle cx="60" cy="112" r="6" fill="url(#screw)" stroke="#3a2708" stroke-width="0.8"/>
+      <circle cx="60" cy="112" r="1.4" fill="#3a2708"/>
+    </g>
+  </svg>
+</div>
+
+<!-- NAV -->
+<header class="nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="#hero" class="brand">
+      <span class="brand-mark">SC</span>
+      <span class="brand-text">Sil Costa <em>By Pretta</em></span>
+    </a>
+    <button type="button" class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="siteMenu"></button>
+    <nav id="siteMenu">
+      <a href="#sobre">Sobre</a>
+      <a href="#antesdepois">Antes & Depois</a>
+      <a href="#galeria">Portfólio</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+      <a class="btn-gold btn-sm nav-agenda-mobile" href="https://api.whatsapp.com/send?phone=5511985773078&text=Ol%C3%A1%20Sil!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Agendar</a>
+    </nav>
+    <a class="btn-gold btn-sm nav-cta" href="https://api.whatsapp.com/send?phone=5511985773078&text=Ol%C3%A1%20Sil!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Agendar</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <p class="eyebrow reveal">Master Coiffeur L'Oréal · São Paulo</p>
+    <h1 class="reveal">Sil <span class="gold">Costa</span><br/><em>By Pretta</em></h1>
+    <p class="lead reveal">Mechas, coloração e carreira com assinatura premium. Cabelos que contam histórias de luz, cor e personalidade.</p>
+    <div class="hero-cta reveal">
+      <a class="btn-gold" href="https://api.whatsapp.com/send?phone=5511985773078&text=Ol%C3%A1%20Sil!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+      <a class="btn-ghost" href="#galeria">Ver portfólio</a>
+    </div>
+  </div>
+
+  <div class="hero-portrait">
+    <div class="portrait">
+      <img src="img/perfil.webp" alt="Sil Costa, cabeleireira Master Coiffeur L'Oréal"/>
+    </div>
+  </div>
+
+  <div class="scroll-hint">role para descobrir ↓</div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="sobre">
+  <div class="container two-col">
+    <div class="sobre-img">
+      <div class="frame">
+        <img src="img/perfil.webp" alt="Retrato Sil Costa"/>
+      </div>
+    </div>
+    <div class="sobre-text reveal">
+      <p class="eyebrow">Sobre</p>
+      <h2>Uma assinatura em <span class="gold">cada fio</span>.</h2>
+      <p>Sou <strong>Sil Costa</strong>, cabeleireira <strong>Master Coiffeur L'Oréal</strong>, especialista em <strong>mechas</strong> e <strong>carreira</strong>. Atendo em São Paulo com um cuidado quase artesanal: cada cliente recebe uma leitura única de tom, textura e estilo de vida.</p>
+      <p>Meu compromisso é entregar resultado natural, sofisticado e que valorize a sua essência — com técnica L'Oréal e olhar apurado para a beleza brasileira.</p>
+      <ul class="badges">
+        <li>✦ Master Coiffeur L'Oréal</li>
+        <li>✦ Especialista em Mechas</li>
+        <li>✦ Coloração & Carreira</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ANTES E DEPOIS -->
+<section id="antesdepois" class="antesdepois">
+  <div class="container">
+    <p class="eyebrow center reveal">Transformações</p>
+    <h2 class="center reveal">Antes & <span class="gold">Depois</span></h2>
+    <p class="center sub reveal">Arraste a barra dourada para revelar a transformação.</p>
+
+    <div style="display: flex; justify-content: center;">
+      <div class="ba" id="ba" style="max-width: 800px; width: 90%;">
+        <img class="ba-img ba-after" src="img/trabalho 2.jpg" alt="Depois"/>
+        <div class="ba-before-wrap" id="baBefore">
+          <img class="ba-img" src="img/trabalho 1.jpg" alt="Antes"/>
+        </div>
+        <div class="ba-handle" id="baHandle">
+          <span>‹ ›</span>
+        </div>
+        <span class="ba-label ba-label-l">ANTES</span>
+        <span class="ba-label ba-label-r">DEPOIS</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section id="galeria" class="galeria">
+  <div class="container">
+    <p class="eyebrow center reveal">Portfólio</p>
+    <h2 class="center reveal">Trabalhos <span class="gold">selecionados</span></h2>
+
+    <div class="grid">
+      <figure class="g-item reveal"><img src="img/trabalho1.webp" alt="Trabalho 1"/></figure>
+      <figure class="g-item reveal"><img src="img/trabalho2.webp" alt="Trabalho 2"/></figure>
+      <figure class="g-item reveal"><img src="img/trabalho3.webp" alt="Trabalho 3"/></figure>
+      <figure class="g-item reveal"><img src="img/trabalho4.webp" alt="Trabalho 4"/></figure>
+     <!---- <figure class="g-item reveal"><img src="img/galeria3.jpg" alt="Trabalho 5"/></figure>
+      <figure class="g-item reveal"><img src="img/galeria4.jpg" alt="Trabalho 6"/></figure>
+      <figure class="g-item reveal"><img src="img/galeria5.jpg" alt="Trabalho 7"/></figure>
+      <figure class="g-item reveal"><img src="img/galeria7.jpg" alt="Trabalho 8"/></figure>--->
+    </div>
+  </div>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <button class="modal-close" id="modalClose" aria-label="Fechar">×</button>
+    <img id="modalImg" alt=""/>
+  </div>
+</section>
+
+<!-- EXPLODING OBJECTS / SERVIÇOS -->
+<section id="servicos" class="servicos">
+  <div class="container">
+    <p class="eyebrow center reveal">Serviços</p>
+    <h2 class="center reveal">Toque em cada objeto. <span class="gold">Eles revelam.</span></h2>
+    <p class="center sub reveal">Passe o mouse (ou toque no celular) para explodir os elementos e ver o que oferecemos.</p>
+
+    <div class="explode-stage" id="explodeStage">
+      <div class="explode-item" data-x="-220" data-y="-120" data-r="-25">
+        <div class="ex-icon">✂</div>
+        <div class="ex-info"><h3>Corte</h3><p>Cortes femininos personalizados conforme o seu rosto e estilo.</p></div>
+      </div>
+      <div class="explode-item" data-x="220" data-y="-110" data-r="20">
+        <div class="ex-icon">🎨</div>
+        <div class="ex-info"><h3>Coloração</h3><p>Técnica L'Oréal — tons naturais, vibrantes e fashion.</p></div>
+      </div>
+      <div class="explode-item" data-x="-260" data-y="80" data-r="15">
+        <div class="ex-icon">✨</div>
+        <div class="ex-info"><h3>Mechas</h3><p>Mechas, balayage, ombré e iluminados — minha especialidade.</p></div>
+      </div>
+      <div class="explode-item" data-x="240" data-y="100" data-r="-18">
+        <div class="ex-icon">💆‍♀️</div>
+        <div class="ex-info"><h3>Carreira</h3><p>Tratamento profundo de reconstrução, hidratação e brilho.</p></div>
+      </div>
+      <div class="explode-item" data-x="0" data-y="-180" data-r="0">
+        <div class="ex-icon">💧</div>
+        <div class="ex-info"><h3>Escova & Finalização</h3><p>Escovas modeladas, ondas e finalizações para eventos.</p></div>
+      </div>
+      <div class="explode-item center-piece" data-x="0" data-y="0" data-r="0">
+        <div class="center-circle">
+          <span>Sil<br/>Costa</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCALIZAÇÃO -->
+<section id="local" class="local">
+  <div class="container two-col">
+    <div class="reveal">
+      <p class="eyebrow">Localização</p>
+      <h2>Atendimento em <span class="gold">São Paulo</span></h2>
+      <p>Atendimento com hora marcada. Confira a localização e venha viver uma experiência premium.</p>
+      <a class="btn-gold" href="https://maps.app.goo.gl/ZCzRLcGaU1ACEZ967" target="_blank" rel="noopener">Como chegar →</a>
+    </div>
+    <div class="map-wrap reveal">
+      <iframe
+        title="Localização Sil Costa"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d457.481715749317!2d-46.6613485!3d-23.4657402!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef74f30307113%3A0xa45cdd0c19ae423b!2sThe%20Version%20Salon%20by%20Pretta!5e0!3m2!1spt-BR!2sbr!4v1778263421395!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="contato">
+  <div class="container">
+    <p class="eyebrow center reveal">Contato</p>
+    <h2 class="center reveal">Vamos criar algo <span class="gold">incrível</span>?</h2>
+
+    <div class="contato-grid">
+      <form class="form reveal" onsubmit="return enviarWhats(event)">
+        <label>Seu nome
+          <input type="text" id="fNome" required placeholder="Como podemos te chamar?"/>
+        </label>
+        <label>Mensagem
+          <textarea id="fMsg" rows="5" required placeholder="Conte o que você deseja transformar..."></textarea>
+        </label>
+        <button class="btn-gold" type="submit">Enviar pelo WhatsApp</button>
+      </form>
+
+      <div class="reveal contato-info">
+        <a class="contato-link" href="https://api.whatsapp.com/send?phone=5511985773078" target="_blank" rel="noopener">
+          <span>WhatsApp</span><strong>+55 11 98577-3078</strong>
+        </a>
+        <a class="contato-link" href="https://www.instagram.com/sil_costaoficial" target="_blank" rel="noopener">
+          <span>Instagram</span><strong>@sil_costaoficial</strong>
+        </a>
+        <a class="contato-link" href="https://maps.app.goo.gl/ZCzRLcGaU1ACEZ967" target="_blank" rel="noopener">
+          <span>Endereço</span><strong>São Paulo — SP</strong>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© <span id="yr"></span> Sil Costa By Pretta · Master Coiffeur L'Oréal · São Paulo</p>
+  </footer>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
