@@ -1,14 +1,34 @@
 # Sil Costa By Pretta
 
-Site institucional da profissional Sil Costa, com foco em apresentação de serviços, portfólio, localização e contato.
+Site institucional da profissional Sil Costa, criado para apresentar a marca, mostrar trabalhos, destacar servicos e facilitar o contato com clientes.
 
-O projeto reúne:
+## Tecnologias
 
-- identidade visual elegante e premium
-- seção inicial com destaque para a marca
-- área de serviços com interação visual
-- galeria de trabalhos realizados
-- mapa de localização
-- formulário de contato via WhatsApp
+- HTML5
+- CSS3
+- JavaScript
+- Google Fonts
+- Google Maps embed
+- WhatsApp API
 
-A proposta do site é valorizar a presença digital da marca e facilitar o contato de clientes interessados em atendimento e agendamento.
+## Recursos do projeto
+
+- Hero section com identidade visual premium
+- Menu responsivo para desktop e mobile
+- Seccao de servicos com interacao visual
+- Galeria de portfolio com modal de imagem
+- Antes e depois com barra comparativa
+- Mapa de localizacao integrado
+- Formulario com envio direto para WhatsApp
+- Layout responsivo pensado para diferentes telas
+
+## Estrutura
+
+- `index.html` - pagina principal do site
+- `css/style.css` - estilos visuais e responsividade
+- `js/main.js` - interacoes, animacoes e comportamento da pagina
+- `img/` - imagens usadas no site
+
+## Objetivo
+
+O projeto foi desenhado para valorizar a presenca digital da marca Sil Costa, reforcar a identidade visual e entregar uma navegacao simples, elegante e funcional.
