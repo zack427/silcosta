@@ -17,19 +17,19 @@
 <div class="floating-scissors" id="floatingScissors" aria-hidden="true">
   <svg viewBox="0 0 120 220" xmlns="http://www.w3.org/2000/svg">
     <defs>
-      <linearGradient id="goldBlade" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#fff7d6"/>
-        <stop offset="40%" stop-color="#e9c66a"/>
-        <stop offset="70%" stop-color="#b8893a"/>
-        <stop offset="100%" stop-color="#7a5a1f"/>
+      <linearGradient id="silverBlade" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffffff"/>
+        <stop offset="40%" stop-color="#c0c0c0"/>
+        <stop offset="70%" stop-color="#877c8c"/>
+        <stop offset="100%" stop-color="#1d1d1b"/>
       </linearGradient>
-      <linearGradient id="goldHandle" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#f6dd92"/>
-        <stop offset="100%" stop-color="#9a7124"/>
+      <linearGradient id="silverHandle" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffffff"/>
+        <stop offset="100%" stop-color="#877c8c"/>
       </linearGradient>
       <radialGradient id="screw" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stop-color="#fff2b8"/>
-        <stop offset="100%" stop-color="#6d4f15"/>
+        <stop offset="0%" stop-color="#ffffff"/>
+        <stop offset="100%" stop-color="#1d1d1b"/>
       </radialGradient>
       <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
         <feGaussianBlur in="SourceAlpha" stdDeviation="2.5"/>
@@ -40,18 +40,18 @@
     </defs>
     <g filter="url(#shadow)">
       <!-- Lâmina esquerda -->
-      <path d="M60 110 L20 6 Q14 -2 22 4 L72 100 Z" fill="url(#goldBlade)" stroke="#5a3f10" stroke-width="0.6"/>
+      <path d="M60 110 L20 6 Q14 -2 22 4 L72 100 Z" fill="url(#silverBlade)" stroke="#1d1d1b" stroke-width="0.6"/>
       <!-- Lâmina direita -->
-      <path d="M60 110 L100 6 Q106 -2 98 4 L48 100 Z" fill="url(#goldBlade)" stroke="#5a3f10" stroke-width="0.6" opacity="0.95"/>
+      <path d="M60 110 L100 6 Q106 -2 98 4 L48 100 Z" fill="url(#silverBlade)" stroke="#1d1d1b" stroke-width="0.6" opacity="0.95"/>
       <!-- Cabos (anéis) -->
-      <ellipse cx="38" cy="170" rx="26" ry="32" fill="none" stroke="url(#goldHandle)" stroke-width="9"/>
-      <ellipse cx="82" cy="170" rx="26" ry="32" fill="none" stroke="url(#goldHandle)" stroke-width="9"/>
+      <ellipse cx="38" cy="170" rx="26" ry="32" fill="none" stroke="url(#silverHandle)" stroke-width="9"/>
+      <ellipse cx="82" cy="170" rx="26" ry="32" fill="none" stroke="url(#silverHandle)" stroke-width="9"/>
       <!-- Conexão cabos-lâminas -->
-      <path d="M48 130 Q40 145 42 158" stroke="url(#goldHandle)" stroke-width="8" fill="none" stroke-linecap="round"/>
-      <path d="M72 130 Q80 145 78 158" stroke="url(#goldHandle)" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <path d="M48 130 Q40 145 42 158" stroke="url(#silverHandle)" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <path d="M72 130 Q80 145 78 158" stroke="url(#silverHandle)" stroke-width="8" fill="none" stroke-linecap="round"/>
       <!-- Parafuso central -->
-      <circle cx="60" cy="112" r="6" fill="url(#screw)" stroke="#3a2708" stroke-width="0.8"/>
-      <circle cx="60" cy="112" r="1.4" fill="#3a2708"/>
+      <circle cx="60" cy="112" r="6" fill="url(#screw)" stroke="#1d1d1b" stroke-width="0.8"/>
+      <circle cx="60" cy="112" r="1.4" fill="#1d1d1b"/>
     </g>
   </svg>
 </div>
@@ -60,8 +60,10 @@
 <header class="nav" id="siteNav">
   <div class="nav-inner">
     <a href="#hero" class="brand">
-      <span class="brand-mark">SC</span>
-      <span class="brand-text">Sil Costa <em>By Pretta</em></span>
+      <span class="brand-mark">
+    <img src="img/silimg2.png" alt="SilImg2">
+</span>
+      <span class="brand-text">The Version <em>salon</em></span>
     </a>
     <button type="button" class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="siteMenu"></button>
     <nav id="siteMenu">
@@ -80,8 +82,8 @@
 <section id="hero" class="hero">
   <div class="hero-bg"></div>
   <div class="hero-content">
-    <p class="eyebrow reveal">Master Coiffeur L'Oréal · São Paulo</p>
-    <h1 class="reveal">Sil <span class="gold">Costa</span><br/><em>By Pretta</em></h1>
+    <p class="eyebrow reveal">Travessa Rafael Blanco - Vila Dionisia, São Paulo</p>
+    <h1 class="reveal">Sil <span class="gold">Costa</span><br/><em></em></h1>
     <p class="lead reveal">Mechas, coloração e carreira com assinatura premium. Cabelos que contam histórias de luz, cor e personalidade.</p>
     <div class="hero-cta reveal">
       <a class="btn-gold" href="https://api.whatsapp.com/send?phone=5511985773078&text=Ol%C3%A1%20Sil!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
@@ -103,7 +105,7 @@
   <div class="container two-col">
     <div class="sobre-img">
       <div class="frame">
-        <img src="img/perfil.webp" alt="Retrato Sil Costa"/>
+        <img src="img/silimg.png" alt="Retrato Sil Costa"/>
       </div>
     </div>
     <div class="sobre-text reveal">
@@ -246,14 +248,14 @@
           <span>Instagram</span><strong>@sil_costaoficial</strong>
         </a>
         <a class="contato-link" href="https://maps.app.goo.gl/ZCzRLcGaU1ACEZ967" target="_blank" rel="noopener">
-          <span>Endereço</span><strong>São Paulo — SP</strong>
+          <span>Endereço</span><strong>Travessa Rafael Blanco-Vila Dionisia, São Paulo</strong>
         </a>
       </div>
     </div>
   </div>
 
   <footer>
-    <p>© <span id="yr"></span> Sil Costa By Pretta · Master Coiffeur L'Oréal · São Paulo</p>
+    <p>© <span id="yr"></span> Sil Costa · Travessa Rafael Blanco - Vila Dionisia, São Paulo </p>
   </footer>
 </section>
 

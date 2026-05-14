@@ -2,12 +2,12 @@
 :root {
   --bg: #0b0b0d;
   --bg-2: #111114;
-  --ink: #f3eee4;
-  --muted: #9b958a;
-  --gold: #d4ac5b;
-  --gold-2: #f3d98a;
-  --gold-deep: #8a6a23;
-  --line: rgba(212, 172, 91, 0.25);
+  --ink: #c0c0c0;
+  --muted: #ffffff;
+  --gold: #ffffff;
+  --gold-2: #1d1d1b;
+  --gold-deep: #ffffff;
+  --line: #c0c0c0;
   --gold-grad: linear-gradient(
     135deg,
     var(--gold-2) 0%,
@@ -119,11 +119,11 @@ h1 em {
     var(--gold-deep)
   );
   color: #1a1208;
-  box-shadow: 0 10px 30px -10px rgba(212, 172, 91, 0.5);
+  box-shadow: 0 10px 30px -10px rgba(255, 255, 255, 0.5);
 }
 .btn-gold:hover {
   transform: translateY(-3px);
-  box-shadow: 0 18px 40px -10px rgba(212, 172, 91, 0.7);
+  box-shadow: 0 18px 40px -10px rgba(255, 255, 255, 0.7);
 }
 .btn-ghost {
   border-color: var(--gold);
@@ -164,15 +164,10 @@ h1 em {
   gap: 0.8rem;
 }
 .brand-mark {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--gold-2), var(--gold-deep));
+  width: 64px;
+  height: 64px;
   display: grid;
   place-items: center;
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 600;
-  color: #1a1208;
 }
 .brand-text {
   font-family: "Cormorant Garamond", serif;
@@ -323,9 +318,9 @@ h1 em {
   background: linear-gradient(
     180deg,
     transparent,
-    rgba(212, 172, 91, 0.15) 8%,
-    rgba(212, 172, 91, 0.55) 50%,
-    rgba(212, 172, 91, 0.2)
+    #c0c0c0 8%,
+    #ffffff 50%,
+    #c0c0c0
   );
   box-shadow: 0 0 12px rgba(212, 172, 91, 0.25);
   transform-origin: top center;
@@ -349,7 +344,7 @@ h1 em {
   pointer-events: none;
   transform: translate(-35%, 0);
   will-change: transform;
-  filter: drop-shadow(0 8px 18px rgba(212, 172, 91, 0.32));
+  filter: drop-shadow(0 8px 18px rgba(255, 255, 255, 0.32));
 }
 .floating-scissors svg {
   width: 100%;
@@ -403,12 +398,12 @@ h1 em {
   background:
     radial-gradient(
       ellipse at 20% 30%,
-      rgba(212, 172, 91, 0.18),
+      #877c,
       transparent 55%
     ),
     radial-gradient(
       ellipse at 80% 70%,
-      rgba(212, 172, 91, 0.1),
+      #c0c0c0,
       transparent 50%
     ),
     linear-gradient(180deg, #0b0b0d, #161310 70%, #050505);
@@ -521,7 +516,7 @@ h1 em {
 
 /* SOBRE */
 .sobre {
-  background: linear-gradient(180deg, #0b0b0d, #0e0c09);
+  background: linear-gradient(180deg, #0b0b0d, #c0c0c047);
 }
 .sobre .frame {
   width: 100%;
@@ -590,7 +585,7 @@ h1 em {
   width: 3px;
   background: linear-gradient(180deg, var(--gold-2), var(--gold-deep));
   transform: translateX(-50%);
-  box-shadow: 0 0 20px rgba(212, 172, 91, 0.6);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
 }
 .ba-handle span {
   position: absolute;
@@ -626,7 +621,7 @@ h1 em {
 
 /* GALERIA */
 .galeria {
-  background: #0b0b0d;
+  background: #070708;
 }
 .grid {
   display: grid;
@@ -706,7 +701,7 @@ h1 em {
 
 /* SERVICOS / EXPLODING */
 .servicos {
-  background: linear-gradient(180deg, #0b0b0d, #100d08);
+  background: linear-gradient( #0b0b0d, rgba(136, 119, 119, 0.422));
 }
 .explode-stage {
   position: relative;
@@ -737,14 +732,14 @@ h1 em {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #1a1612, #2a2218);
+  background: linear-gradient(135deg, #1a1612, #c0c0c0);
   border: 1px solid var(--line);
   display: grid;
   place-items: center;
   font-size: 2rem;
   box-shadow:
     0 15px 40px -10px rgba(0, 0, 0, 0.7),
-    inset 0 0 20px rgba(212, 172, 91, 0.1);
+    inset 0 0 20px #877c;
 }
 .ex-info {
   opacity: 0;
@@ -774,10 +769,10 @@ h1 em {
   place-items: center;
   font-family: "Cormorant Garamond", serif;
   font-size: 1.8rem;
-  color: #1a1208;
+  color: #1d1d1b;
   text-align: center;
   line-height: 1;
-  box-shadow: 0 0 80px rgba(212, 172, 91, 0.4);
+  box-shadow: 0 0 80px #ffffff;
 }
 .explode-stage.exploded .explode-item:not(.center-piece) {
   transform: translate(calc(-50% + var(--tx)), calc(-50% + var(--ty)))
