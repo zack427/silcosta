@@ -8,11 +8,13 @@ Site institucional da profissional Sil Costa, criado para apresentar a marca, mo
 - CSS3
 - JavaScript
 - Google Fonts
-- Google Maps embed
-- WhatsApp API
+- Font Awesome
+- Google Maps Embed
 
 ## Recursos do projeto
 
+- Formulário com envio direto para WhatsApp
+- Agendamento via WhatsApp
 - Hero section com identidade visual premium
 - Menu responsivo para desktop e mobile
 - Seccao de servicos com interacao visual
